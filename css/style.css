@@ -74,6 +74,10 @@ p {
     margin-left: auto;
 }
 
+.item-contact{
+    margin-right: 30px;
+}
+
 .logo {
     font-family: Raleway, sans-serif;
     font-size: 26px;
@@ -112,7 +116,18 @@ p {
 }
 
 .contact {
+    display: flex;
+    align-items: center;
+    padding: 0;
+
     color: var(--main-text-color);
+}
+
+.contact-icon{
+    width: 16px;
+    margin-right: 10px;
+    
+    fill: currentColor
 }
 
 /* герой */
