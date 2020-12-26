@@ -4,6 +4,7 @@
     --accent-color:  #2196F3;
     --main-white-color: #FFFFFF;
     --address-color: #2F303A;
+    --background-icon: #F5F4FA;;
 }
 
 body {
@@ -142,7 +143,7 @@ p {
     margin: 0 auto;
     padding-top: 200px;
     background-color: #C4C4C4;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero-img\ .jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-img\ .jpg);
     background-size: cover;
     background-position: center;
 }
@@ -195,7 +196,6 @@ p {
 
 .features-item {
     width: 270px;
-    height: 101px;
 }
 
 .features-title{
@@ -233,6 +233,23 @@ p {
     letter-spacing: 0.03em;
 
     color: var(--main-text-color);
+}
+
+.features-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: var(--background-icon);
+    margin-bottom: 30px;
+    border-radius: 4px;
+    
+}
+
+.icon{
+   
+    width: 70px;
+    height: 70px;
 }
 
 /* Работа*/
@@ -295,9 +312,47 @@ p {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-bottom: 30px;
 
     color: var(--main-text-color);
+}
+
+.social-list{
+    display: flex;
+    padding: 16px 32px 30px;
+   
+}
+
+.social-item{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+}
+.social-list > .social-item:not(:last-child){
+    margin-right: 10px;
+}
+
+.social-item:hover,
+.social-item:focus{
+    background-color: var(--accent-color);
+}
+
+.social-link{
+    padding: 12px;
+    color: var(--main-text-color);
+}
+
+.social-link:hover,
+.social-link:focus{
+    color: var(--main-white-color);
+}
+
+.social{
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
 }
 
 /* адресс */
